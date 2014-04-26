@@ -1,0 +1,29 @@
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES TURBO HIPSTER
+	
+	FONTS
+	-----------------------------------
+	
+	- Coffee Service
+	- Variables
+	
+-------------------------------------------------------------------------*/
+
+/* COFFEE SERVICE -------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Coffee Service';
+    src: url('../fonts/coffeeservice-webfont.eot');
+    src: url('../fonts/coffeeservice-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/coffeeservice-webfont.woff') format('woff'),
+         url('../fonts/coffeeservice-webfont.ttf') format('truetype'),
+         url('../fonts/coffeeservice-webfont.svg#coffee_serviceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* VARIABLES ------------------------------------------------------------*/
+
+$CoffeeService: 'Coffee Service';

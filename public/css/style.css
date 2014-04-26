@@ -1,7 +1,7 @@
-@import url(../css/normalize.css);
+@import url(/public/css/normalize.css);
 /*-------------------------------------------------------------------------
 	
-	ZACK GINIES SASS PROJECT
+	ZACK GINIES TURBO HIPSTER
 	
 	BASE STYLE IMPORTS
 	-----------------------------------
@@ -19,9 +19,91 @@
 -------------------------------------------------------------------------*/
 /* NORMALIZE ------------------------------------------------------------*/
 /* MIXINS ---------------------------------------------------------------*/
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES TURBO HIPSTER
+	
+	MIXINS
+	-----------------------------------
+	
+	- Rounded Corners
+	- Box Sizing
+	- Opacity
+	
+-------------------------------------------------------------------------*/
 /* HELPERS --------------------------------------------------------------*/
 /* CORE STYLES ----------------------------------------------------------*/
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES TURBO HIPSTER
+	
+	FONTS
+	-----------------------------------
+	
+	- Coffee Service
+	- Variables
+	
+-------------------------------------------------------------------------*/
+/* COFFEE SERVICE -------------------------------------------------------*/
+@font-face {
+  font-family: 'Coffee Service';
+  src: url("../fonts/coffeeservice-webfont.eot");
+  src: url("../fonts/coffeeservice-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/coffeeservice-webfont.woff") format("woff"), url("../fonts/coffeeservice-webfont.ttf") format("truetype"), url("../fonts/coffeeservice-webfont.svg#coffee_serviceregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* VARIABLES ------------------------------------------------------------*/
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES TURBO HIPSTER
+	
+	TYPOGRAPHY
+	-----------------------------------
+	
+	- Headers
+
+	
+-------------------------------------------------------------------------*/
+/* HEADERS --------------------------------------------------------------*/
+/* line 15, ../../resources/sass/core/_typography.scss */
+h1 {
+  font-family: "Coffee Service";
+  text-align: center;
+  color: #323136; }
+
 /* STRUCTURE ------------------------------------------------------------*/
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES TURBO HIPSTER
+	
+	BASE STRUCTURE (MOBILE FIRST)
+	-----------------------------------
+	
+	- Body & Wrapper
+	- Portrait
+
+	
+-------------------------------------------------------------------------*/
+/* BODY & WRAPPER -------------------------------------------------------*/
+/* line 16, ../../resources/sass/_structure.scss */
+html, body {
+  height: 100%; }
+
+/* line 20, ../../resources/sass/_structure.scss */
+#main_content {
+  height: 100%; }
+
+/* PORTRAIT ------------------------------------------------------------*/
+/* line 26, ../../resources/sass/_structure.scss */
+#portrait {
+  background: url(../images/backgrounds/zack-mobile.jpg) center 80px no-repeat;
+  height: 100%; }
+  /* line 30, ../../resources/sass/_structure.scss */
+  #portrait h1 {
+    margin: 0;
+    padding: 380px 0 0 0;
+    font-size: 24px; }
+
 /* HEADER ---------------------------------------------------------------*/
 /* FOOTER ---------------------------------------------------------------*/
 /* MEDIA QUERIES --------------------------------------------------------*/
@@ -39,11 +121,44 @@
 
 -------------------------------------------------------------------------*/
 /* TABLET & SMALLER LAPTOPS ---------------------------------------------*/
+@media screen and (min-width: 768px) {
+  /*-------------------------------------------------------------------------
+  	
+  	ZACK GINIES TURBO HIPSTER
+  	
+  	TABLET STRUCTURE
+  	-----------------------------------
+  	
+  	- Portrait
+  
+  	
+  -------------------------------------------------------------------------*/
+  /* PORTRAIT ------------------------------------------------------------*/
+  /* line 15, ../../resources/sass/mq/tablet/_structure.scss */
+  #portrait {
+    background: url(../images/backgrounds/zack.jpg) center 0 fixed no-repeat;
+    background-size: cover; }
+    /* line 19, ../../resources/sass/mq/tablet/_structure.scss */
+    #portrait h1 {
+      font-size: 60px;
+      color: #fff; } }
 /* DESKTOP -------------------------------------------------------------*/
 @media screen and (min-width: 1030px) {
-  /* line 1, ../../resources/sass/mq/desktop/_structure.scss */
-  html {
-    background: blue; } }
+  /*-------------------------------------------------------------------------
+  	
+  	ZACK GINIES TURBO HIPSTER
+  	
+  	DESKTOP STRUCTURE
+  	-----------------------------------
+  	
+  	- Portrait
+  
+  	
+  -------------------------------------------------------------------------*/
+  /* PORTRAIT ------------------------------------------------------------*/
+  /* line 17, ../../resources/sass/mq/desktop/_structure.scss */
+  #portrait h1 {
+    font-size: 85px; } }
 /* EXTRA LARGE SCREEN --------------------------------------------------*/
 /* PRINT ---------------------------------------------------------------*/
 @media print {

@@ -1,0 +1,33 @@
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES TURBO HIPSTER
+	
+	MIXINS
+	-----------------------------------
+	
+	- Rounded Corners
+	- Box Sizing
+	- Opacity
+	
+-------------------------------------------------------------------------*/
+
+@mixin rounded-corners($radius: 5px) {
+	-webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+@mixin box-sizing($sizing: border-box) {
+	-webkit-box-sizing: $sizing;
+	-moz-box-sizing: $sizing;
+	-ms-box-sizing: $sizing;
+	box-sizing: $sizing;    
+}
+
+@mixin opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
