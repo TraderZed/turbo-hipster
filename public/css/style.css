@@ -1,0 +1,53 @@
+@import url(../css/normalize.css);
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES SASS PROJECT
+	
+	BASE STYLE IMPORTS
+	-----------------------------------
+	
+	- Normalize
+	- Mixins
+	- Helpers
+	- Core Styles
+	- Structure
+	- Header 
+	- Footer
+	- Media Queries
+	- Retina
+
+-------------------------------------------------------------------------*/
+/* NORMALIZE ------------------------------------------------------------*/
+/* MIXINS ---------------------------------------------------------------*/
+/* HELPERS --------------------------------------------------------------*/
+/* CORE STYLES ----------------------------------------------------------*/
+/* STRUCTURE ------------------------------------------------------------*/
+/* HEADER ---------------------------------------------------------------*/
+/* FOOTER ---------------------------------------------------------------*/
+/* MEDIA QUERIES --------------------------------------------------------*/
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES SASS PROJECT
+	
+	MEDIA QUERIES
+	-----------------------------------
+	
+	- Tablets & Smaller Laptops
+	- Desktop
+	- Extra Large Screen
+	- Print
+
+-------------------------------------------------------------------------*/
+/* TABLET & SMALLER LAPTOPS ---------------------------------------------*/
+/* DESKTOP -------------------------------------------------------------*/
+@media screen and (min-width: 1030px) {
+  /* line 1, ../../resources/sass/mq/desktop/_structure.scss */
+  html {
+    background: blue; } }
+/* EXTRA LARGE SCREEN --------------------------------------------------*/
+/* PRINT ---------------------------------------------------------------*/
+@media print {
+  /* Welcome to Compass. Use this file to define print styles.
+   * Import this file using the following HTML or equivalent:
+   * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */ }
+/* RETINA ---------------------------------------------------------------*/

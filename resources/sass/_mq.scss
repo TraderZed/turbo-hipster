@@ -1,0 +1,50 @@
+/*-------------------------------------------------------------------------
+	
+	ZACK GINIES SASS PROJECT
+	
+	MEDIA QUERIES
+	-----------------------------------
+	
+	- Tablets & Smaller Laptops
+	- Desktop
+	- Extra Large Screen
+	- Print
+
+-------------------------------------------------------------------------*/
+
+/* TABLET & SMALLER LAPTOPS ---------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+	@import 'mq/tablet/structure';
+	@import 'mq/tablet/header';
+	@import 'mq/tablet/footer';
+	@import 'mq/tablet/retina';
+
+}
+
+
+/* DESKTOP -------------------------------------------------------------*/
+
+@media screen and (min-width: 1030px) {
+	@import 'mq/desktop/structure';
+	@import 'mq/desktop/header';
+	@import 'mq/desktop/footer';
+	@import 'mq/desktop/retina';
+}
+
+
+/* EXTRA LARGE SCREEN --------------------------------------------------*/
+
+@media screen and (min-width: 1240px) {
+	@import 'mq/large/structure';
+	@import 'mq/large/header';
+	@import 'mq/large/footer';
+	@import 'mq/large/retina';
+}
+
+
+/* PRINT ---------------------------------------------------------------*/
+
+@media print {
+	@import "print";
+}
