@@ -6,7 +6,7 @@
 	-----------------------------------
 	
 	- Body & Wrapper
-	- Portrait
+	- Intro
 
 	
 -------------------------------------------------------------------------*/
@@ -15,22 +15,47 @@
 
 html, body {
 	height: 100%;
+	font-family: $Lato;
+	font-weight: 100;
 }
 
 #main_content {
 	height: 100%;
+	line-height: 24px;
 }
 
-/* PORTRAIT ------------------------------------------------------------*/
+/* INTRO ------------------------------------------------------------*/
 
-#portrait {
-	background: url(../images/backgrounds/zack-mobile.jpg) center 80px no-repeat;
+#intro {
+	position: relative;
+	background: url(../images/backgrounds/zack-mobile.jpg) center 70px no-repeat;
 	height: 100%;
 	
 	h1 {
 		margin: 0;
-		padding: 380px 0 0 0;
+		padding: 370px 0 0 0;
 		font-size: 24px
 	}
 
+	.arrow {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		margin-left:-10px;
+		width: 20px;
+		height: 20px;
+		background: url(../images/icons/arrow_down_dark.png) 0 0 no-repeat;
+		background-size: contain;
+	}
+	
+	.bounce {
+		@include animation(bounce 2s infinite);
+	}
+
+}
+
+/* INFO ------------------------------------------------------------*/
+
+#info {
+	padding: 0 5%;
 }

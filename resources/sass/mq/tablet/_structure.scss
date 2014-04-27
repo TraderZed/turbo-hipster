@@ -5,20 +5,40 @@
 	TABLET STRUCTURE
 	-----------------------------------
 	
-	- Portrait
+	- Intro
+	- Info
 
 	
 -------------------------------------------------------------------------*/
 
-/* PORTRAIT ------------------------------------------------------------*/
+/* INTRO ------------------------------------------------------------*/
 
-#portrait {
+#intro {
+	display: table;
 	background: url(../images/backgrounds/zack.jpg) center 0 fixed no-repeat;
 	background-size: cover;
+	width: 100%;
 	
 	h1 {
+		display: table-cell;
+		padding: 0 0 0 0;
+		vertical-align: middle;
 		font-size: 60px;
 		color: #fff;
 	}
+	
+	.arrow {
+		margin-left:-40px;
+		width: 40px;
+		height: 40px;
+		background: url(../images/icons/arrow_down_white.png) 0 0 no-repeat;
+		background-size: contain;
+	}
 
+}
+
+/* INFO ------------------------------------------------------------*/
+
+#info {
+	padding-top: 40px;
 }

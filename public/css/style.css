@@ -29,8 +29,69 @@
 	- Rounded Corners
 	- Box Sizing
 	- Opacity
+	- Animations
 	
 -------------------------------------------------------------------------*/
+@-webkit-keyframes bounce {
+  /* line 69, ../../resources/sass/_mixins.scss */
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 73, ../../resources/sass/_mixins.scss */
+  20%, 70% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+@-moz-keyframes bounce {
+  /* line 69, ../../resources/sass/_mixins.scss */
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 73, ../../resources/sass/_mixins.scss */
+  20%, 70% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+@-ms-keyframes bounce {
+  /* line 69, ../../resources/sass/_mixins.scss */
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 73, ../../resources/sass/_mixins.scss */
+  20%, 70% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+@keyframes bounce {
+  /* line 69, ../../resources/sass/_mixins.scss */
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 73, ../../resources/sass/_mixins.scss */
+  20%, 70% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
 /* HELPERS --------------------------------------------------------------*/
 /* CORE STYLES ----------------------------------------------------------*/
 /*-------------------------------------------------------------------------
@@ -68,8 +129,14 @@
 /* line 15, ../../resources/sass/core/_typography.scss */
 h1 {
   font-family: "Coffee Service";
+  font-weight: normal;
   text-align: center;
   color: #323136; }
+
+/* line 22, ../../resources/sass/core/_typography.scss */
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-transform: uppercase; }
 
 /* STRUCTURE ------------------------------------------------------------*/
 /*-------------------------------------------------------------------------
@@ -80,29 +147,54 @@ h1 {
 	-----------------------------------
 	
 	- Body & Wrapper
-	- Portrait
+	- Intro
 
 	
 -------------------------------------------------------------------------*/
 /* BODY & WRAPPER -------------------------------------------------------*/
 /* line 16, ../../resources/sass/_structure.scss */
 html, body {
-  height: 100%; }
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 100; }
 
-/* line 20, ../../resources/sass/_structure.scss */
+/* line 22, ../../resources/sass/_structure.scss */
 #main_content {
-  height: 100%; }
+  height: 100%;
+  line-height: 24px; }
 
-/* PORTRAIT ------------------------------------------------------------*/
-/* line 26, ../../resources/sass/_structure.scss */
-#portrait {
-  background: url(../images/backgrounds/zack-mobile.jpg) center 80px no-repeat;
+/* INTRO ------------------------------------------------------------*/
+/* line 29, ../../resources/sass/_structure.scss */
+#intro {
+  position: relative;
+  background: url(../images/backgrounds/zack-mobile.jpg) center 70px no-repeat;
   height: 100%; }
-  /* line 30, ../../resources/sass/_structure.scss */
-  #portrait h1 {
+  /* line 34, ../../resources/sass/_structure.scss */
+  #intro h1 {
     margin: 0;
-    padding: 380px 0 0 0;
+    padding: 370px 0 0 0;
     font-size: 24px; }
+  /* line 40, ../../resources/sass/_structure.scss */
+  #intro .arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/arrow_down_dark.png) 0 0 no-repeat;
+    background-size: contain; }
+  /* line 51, ../../resources/sass/_structure.scss */
+  #intro .bounce {
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -ms-animation: bounce 2s infinite;
+    animation: bounce 2s infinite; }
+
+/* INFO ------------------------------------------------------------*/
+/* line 59, ../../resources/sass/_structure.scss */
+#info {
+  padding: 0 5%; }
 
 /* HEADER ---------------------------------------------------------------*/
 /* FOOTER ---------------------------------------------------------------*/
@@ -129,19 +221,37 @@ html, body {
   	TABLET STRUCTURE
   	-----------------------------------
   	
-  	- Portrait
+  	- Intro
+  	- Info
   
   	
   -------------------------------------------------------------------------*/
-  /* PORTRAIT ------------------------------------------------------------*/
-  /* line 15, ../../resources/sass/mq/tablet/_structure.scss */
-  #portrait {
+  /* INTRO ------------------------------------------------------------*/
+  /* line 16, ../../resources/sass/mq/tablet/_structure.scss */
+  #intro {
+    display: table;
     background: url(../images/backgrounds/zack.jpg) center 0 fixed no-repeat;
-    background-size: cover; }
-    /* line 19, ../../resources/sass/mq/tablet/_structure.scss */
-    #portrait h1 {
+    background-size: cover;
+    width: 100%; }
+    /* line 22, ../../resources/sass/mq/tablet/_structure.scss */
+    #intro h1 {
+      display: table-cell;
+      padding: 0 0 0 0;
+      vertical-align: middle;
       font-size: 60px;
-      color: #fff; } }
+      color: #fff; }
+    /* line 30, ../../resources/sass/mq/tablet/_structure.scss */
+    #intro .arrow {
+      margin-left: -40px;
+      width: 40px;
+      height: 40px;
+      background: url(../images/icons/arrow_down_white.png) 0 0 no-repeat;
+      background-size: contain; }
+
+  /* INFO ------------------------------------------------------------*/
+  /* line 42, ../../resources/sass/mq/tablet/_structure.scss */
+  #info {
+    padding-top: 40px; } }
 /* DESKTOP -------------------------------------------------------------*/
 @media screen and (min-width: 1030px) {
   /*-------------------------------------------------------------------------
@@ -151,13 +261,13 @@ html, body {
   	DESKTOP STRUCTURE
   	-----------------------------------
   	
-  	- Portrait
+  	- Intro
   
   	
   -------------------------------------------------------------------------*/
-  /* PORTRAIT ------------------------------------------------------------*/
+  /* INTRO ------------------------------------------------------------*/
   /* line 17, ../../resources/sass/mq/desktop/_structure.scss */
-  #portrait h1 {
+  #intro h1 {
     font-size: 85px; } }
 /* EXTRA LARGE SCREEN --------------------------------------------------*/
 /* PRINT ---------------------------------------------------------------*/
