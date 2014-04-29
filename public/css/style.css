@@ -29,18 +29,19 @@
 	- Rounded Corners
 	- Box Sizing
 	- Opacity
+	- Rotate
 	- Animations
 	
 -------------------------------------------------------------------------*/
 @-webkit-keyframes bounce {
-  /* line 69, ../../resources/sass/_mixins.scss */
+  /* line 78, ../../resources/sass/_mixins.scss */
   0%, 50%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 73, ../../resources/sass/_mixins.scss */
+  /* line 82, ../../resources/sass/_mixins.scss */
   20%, 70% {
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -48,14 +49,14 @@
     transform: translateY(-10px); } }
 
 @-moz-keyframes bounce {
-  /* line 69, ../../resources/sass/_mixins.scss */
+  /* line 78, ../../resources/sass/_mixins.scss */
   0%, 50%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 73, ../../resources/sass/_mixins.scss */
+  /* line 82, ../../resources/sass/_mixins.scss */
   20%, 70% {
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -63,14 +64,14 @@
     transform: translateY(-10px); } }
 
 @-ms-keyframes bounce {
-  /* line 69, ../../resources/sass/_mixins.scss */
+  /* line 78, ../../resources/sass/_mixins.scss */
   0%, 50%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 73, ../../resources/sass/_mixins.scss */
+  /* line 82, ../../resources/sass/_mixins.scss */
   20%, 70% {
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -78,14 +79,14 @@
     transform: translateY(-10px); } }
 
 @keyframes bounce {
-  /* line 69, ../../resources/sass/_mixins.scss */
+  /* line 78, ../../resources/sass/_mixins.scss */
   0%, 50%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
 
-  /* line 73, ../../resources/sass/_mixins.scss */
+  /* line 82, ../../resources/sass/_mixins.scss */
   20%, 70% {
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -163,18 +164,31 @@ html, body {
   height: 100%;
   line-height: 24px; }
 
+/* line 27, ../../resources/sass/_structure.scss */
+::selection {
+  background: #00ffff;
+  /* Safari */
+  color: #ff007e; }
+
+/* line 32, ../../resources/sass/_structure.scss */
+::-moz-selection {
+  background: #00ffff;
+  /* Firefox */
+  color: #ff007e; }
+
 /* INTRO ------------------------------------------------------------*/
-/* line 29, ../../resources/sass/_structure.scss */
+/* line 39, ../../resources/sass/_structure.scss */
 #intro {
   position: relative;
   background: url(../images/backgrounds/zack-mobile.jpg) center 70px no-repeat;
   height: 100%; }
-  /* line 34, ../../resources/sass/_structure.scss */
+  /* line 44, ../../resources/sass/_structure.scss */
   #intro h1 {
     margin: 0;
     padding: 370px 0 0 0;
-    font-size: 24px; }
-  /* line 40, ../../resources/sass/_structure.scss */
+    font-size: 24px;
+    line-height: 100%; }
+  /* line 51, ../../resources/sass/_structure.scss */
   #intro .arrow {
     position: absolute;
     bottom: 10px;
@@ -184,7 +198,7 @@ html, body {
     height: 20px;
     background: url(../images/icons/arrow_down_dark.png) 0 0 no-repeat;
     background-size: contain; }
-  /* line 51, ../../resources/sass/_structure.scss */
+  /* line 62, ../../resources/sass/_structure.scss */
   #intro .bounce {
     -webkit-animation: bounce 2s infinite;
     -moz-animation: bounce 2s infinite;
@@ -192,9 +206,25 @@ html, body {
     animation: bounce 2s infinite; }
 
 /* INFO ------------------------------------------------------------*/
-/* line 59, ../../resources/sass/_structure.scss */
+/* line 70, ../../resources/sass/_structure.scss */
 #info {
-  padding: 0 5%; }
+  background: #323136 url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
+  background-size: 20px;
+  padding: 20px 5%;
+  color: #fff; }
+  /* line 76, ../../resources/sass/_structure.scss */
+  #info h2, #info h3 {
+    font-size: 16px; }
+  /* line 80, ../../resources/sass/_structure.scss */
+  #info p {
+    margin: 0 0 40px 0; }
+  /* line 84, ../../resources/sass/_structure.scss */
+  #info ul {
+    padding: 0 0 0 20px; }
+  /* line 88, ../../resources/sass/_structure.scss */
+  #info section {
+    margin: 0 0 40px 0;
+    padding: 0 0 0 0; }
 
 /* HEADER ---------------------------------------------------------------*/
 /* FOOTER ---------------------------------------------------------------*/
@@ -238,9 +268,10 @@ html, body {
       display: table-cell;
       padding: 0 0 0 0;
       vertical-align: middle;
-      font-size: 60px;
+      font-size: 142px;
+      letter-spacing: 4px;
       color: #fff; }
-    /* line 30, ../../resources/sass/mq/tablet/_structure.scss */
+    /* line 31, ../../resources/sass/mq/tablet/_structure.scss */
     #intro .arrow {
       margin-left: -40px;
       width: 40px;
@@ -249,9 +280,26 @@ html, body {
       background-size: contain; }
 
   /* INFO ------------------------------------------------------------*/
-  /* line 42, ../../resources/sass/mq/tablet/_structure.scss */
+  /* line 43, ../../resources/sass/mq/tablet/_structure.scss */
   #info {
-    padding-top: 40px; } }
+    position: relative;
+    background: none;
+    padding-top: 40px; }
+    /* line 48, ../../resources/sass/mq/tablet/_structure.scss */
+    #info:before {
+      position: absolute;
+      left: 0;
+      top: -50px;
+      background: url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
+      background-size: 50px;
+      height: 50px;
+      width: 100%;
+      content: '';
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); } }
 /* DESKTOP -------------------------------------------------------------*/
 @media screen and (min-width: 1030px) {
   /*-------------------------------------------------------------------------
@@ -268,7 +316,8 @@ html, body {
   /* INTRO ------------------------------------------------------------*/
   /* line 17, ../../resources/sass/mq/desktop/_structure.scss */
   #intro h1 {
-    font-size: 85px; } }
+    font-size: 170px;
+    letter-spacing: 6px; } }
 /* EXTRA LARGE SCREEN --------------------------------------------------*/
 /* PRINT ---------------------------------------------------------------*/
 @media print {

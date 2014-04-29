@@ -24,6 +24,16 @@ html, body {
 	line-height: 24px;
 }
 
+::selection {
+	background: #00ffff; /* Safari */
+	color: #ff007e;
+}
+
+::-moz-selection {
+	background: #00ffff; /* Firefox */
+	color: #ff007e;
+}
+
 /* INTRO ------------------------------------------------------------*/
 
 #intro {
@@ -34,7 +44,8 @@ html, body {
 	h1 {
 		margin: 0;
 		padding: 370px 0 0 0;
-		font-size: 24px
+		font-size: 24px;
+		line-height: 100%;
 	}
 
 	.arrow {
@@ -57,5 +68,26 @@ html, body {
 /* INFO ------------------------------------------------------------*/
 
 #info {
-	padding: 0 5%;
+	background: $darkGrey url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
+	background-size: 20px;
+	padding: 20px 5%;
+	color: #fff;
+	
+	h2, h3 {
+		font-size: 16px;
+	}
+	
+	p {
+		margin: 0 0 40px 0;
+	}
+
+	ul {
+		padding: 0 0 0 20px;
+	}
+	
+	section {
+		margin: 0 0 40px 0;
+		padding: 0 0 0 0;
+	}
+	
 }

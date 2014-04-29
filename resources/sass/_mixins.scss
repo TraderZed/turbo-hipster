@@ -8,6 +8,7 @@
 	- Rounded Corners
 	- Box Sizing
 	- Opacity
+	- Rotate
 	- Animations
 	
 -------------------------------------------------------------------------*/
@@ -31,6 +32,14 @@
   opacity: $value;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
   filter: alpha(opacity=$IEValue);
+}
+
+@mixin rotate($degrees) {
+	-webkit-transform: rotate($degrees);
+	-moz-transform: rotate($degrees);
+	-ms-transform: rotate($degrees);
+	-o-transform: rotate($degrees);
+	transform: rotate($degrees);
 }
 
 @mixin keyframes($name) {
