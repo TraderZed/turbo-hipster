@@ -25,13 +25,13 @@ html, body {
 }
 
 ::selection {
-	background: #00ffff; /* Safari */
-	color: #ff007e;
+	background: $neonBlue; /* Safari */
+	color: $neonPink;
 }
 
 ::-moz-selection {
-	background: #00ffff; /* Firefox */
-	color: #ff007e;
+	background: $neonBlue; /* Firefox */
+	color: $neonPink;
 }
 
 /* INTRO ------------------------------------------------------------*/

@@ -29,11 +29,7 @@
 	}
 	
 	.arrow {
-		margin-left:-40px;
-		width: 40px;
-		height: 40px;
-		background: url(../images/icons/arrow_down_white.png) 0 0 no-repeat;
-		background-size: contain;
+		display: none;
 	}
 
 }
@@ -45,14 +41,19 @@
 	background: none;
 	padding-top: 40px;
 	
-	&:before {
-		position: absolute; left: 0; top: -50px;
-		background: url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
-		background-size: 50px;
-		height: 50px;
+	h2 {
+		position: absolute; left: 0; top: -77px;
+		background: #fff;
+		padding: 20px 0;
 		width: 100%;
-		content: '';
+		font-weight: 700;
+		letter-spacing: 6px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $neonPink;
 		
-		@include rotate(180deg);
+		span {
+			font-style: italic;
+		}
 	}
 }
