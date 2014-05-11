@@ -136,7 +136,8 @@ h1 {
 
 /* line 22, ../../resources/sass/core/_typography.scss */
 h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  font-weight: 700;
+  letter-spacing: 3px;
   text-transform: uppercase; }
 
 /* STRUCTURE ------------------------------------------------------------*/
@@ -215,13 +216,16 @@ html, body {
   /* line 76, ../../resources/sass/_structure.scss */
   #info h2, #info h3 {
     font-size: 16px; }
-  /* line 80, ../../resources/sass/_structure.scss */
+    /* line 79, ../../resources/sass/_structure.scss */
+    #info h2 span, #info h3 span {
+      font-style: italic; }
+  /* line 84, ../../resources/sass/_structure.scss */
   #info p {
     margin: 0 0 40px 0; }
-  /* line 84, ../../resources/sass/_structure.scss */
+  /* line 88, ../../resources/sass/_structure.scss */
   #info ul {
     padding: 0 0 0 20px; }
-  /* line 88, ../../resources/sass/_structure.scss */
+  /* line 92, ../../resources/sass/_structure.scss */
   #info section {
     margin: 0 0 40px 0;
     padding: 0 0 0 0; }
@@ -273,33 +277,23 @@ html, body {
       color: #fff; }
     /* line 31, ../../resources/sass/mq/tablet/_structure.scss */
     #intro .arrow {
-      margin-left: -40px;
+      bottom: 50px;
+      margin-left: -20px;
       width: 40px;
       height: 40px;
       background: url(../images/icons/arrow_down_white.png) 0 0 no-repeat;
       background-size: contain; }
 
   /* INFO ------------------------------------------------------------*/
-  /* line 43, ../../resources/sass/mq/tablet/_structure.scss */
+  /* line 44, ../../resources/sass/mq/tablet/_structure.scss */
   #info {
     position: relative;
     background: none;
-    padding-top: 40px; }
-    /* line 48, ../../resources/sass/mq/tablet/_structure.scss */
-    #info:before {
-      position: absolute;
-      left: 0;
-      top: -50px;
-      background: url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
-      background-size: 50px;
-      height: 50px;
-      width: 100%;
-      content: '';
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      transform: rotate(180deg); } }
+    padding-top: 40px;
+    color: #323136; }
+    /* line 50, ../../resources/sass/mq/tablet/_structure.scss */
+    #info p {
+      width: 50%; } }
 /* DESKTOP -------------------------------------------------------------*/
 @media screen and (min-width: 1030px) {
   /*-------------------------------------------------------------------------
