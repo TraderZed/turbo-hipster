@@ -230,6 +230,11 @@ html, body {
     margin: 0 0 40px 0;
     padding: 0 0 0 0; }
 
+/* LIKES ------------------------------------------------------------*/
+/* line 101, ../../resources/sass/_structure.scss */
+#likes {
+  display: none; }
+
 /* HEADER ---------------------------------------------------------------*/
 /* FOOTER ---------------------------------------------------------------*/
 /* MEDIA QUERIES --------------------------------------------------------*/
@@ -304,14 +309,46 @@ html, body {
   	-----------------------------------
   	
   	- Intro
-  
+  	- Likes
   	
   -------------------------------------------------------------------------*/
   /* INTRO ------------------------------------------------------------*/
   /* line 17, ../../resources/sass/mq/desktop/_structure.scss */
   #intro h1 {
     font-size: 170px;
-    letter-spacing: 6px; } }
+    letter-spacing: 6px; }
+
+  /* LIKES ------------------------------------------------------------*/
+  /* line 26, ../../resources/sass/mq/desktop/_structure.scss */
+  #likes {
+    display: block; }
+    /* line 29, ../../resources/sass/mq/desktop/_structure.scss */
+    #likes .video_wrapper {
+      position: relative;
+      height: auto;
+      min-height: 100%;
+      width: auto;
+      min-width: 100%; }
+      /* line 37, ../../resources/sass/mq/desktop/_structure.scss */
+      #likes .video_wrapper h2 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        line-height: 45px;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        color: #fff; }
+        /* line 47, ../../resources/sass/mq/desktop/_structure.scss */
+        #likes .video_wrapper h2 span {
+          display: block;
+          font-size: 60px; }
+      /* line 54, ../../resources/sass/mq/desktop/_structure.scss */
+      #likes .video_wrapper video {
+        height: auto;
+        min-height: 100%;
+        width: auto;
+        min-width: 100%; } }
 /* EXTRA LARGE SCREEN --------------------------------------------------*/
 /* PRINT ---------------------------------------------------------------*/
 @media print {
