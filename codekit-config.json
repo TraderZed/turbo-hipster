@@ -52,7 +52,7 @@
     },
     "\/public\/js\/build-ck.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/build-ck.js",
@@ -70,16 +70,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/public\/images\/icons\/arrow_down_white.png" : {
+    "\/resources\/sass\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_white.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_white.png",
-      "initialSize" : 1307,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/resources\/sass\/ie.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/ie.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/resources\/sass\/print.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -93,17 +94,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/resources\/sass\/ie.scss" : {
+    "\/public\/images\/icons\/arrow_down_white.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/resources\/sass\/ie.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/ie.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_white.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_white.png",
+      "initialSize" : 1307,
+      "fileType" : 8192
     },
     "\/resources\/sass\/_structure.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -152,15 +152,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/css\/ie.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -170,15 +161,24 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
+    "\/public\/css\/ie.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/resources\/js\/build.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
+      "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/resources\/js\/build.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/public\/js\/build-ck.js",
+      "outputAbbreviatedPath" : "\/resources\/js\/build-ck.js",
       "fileType" : 64
     },
     "\/resources\/sass\/_mq.scss" : {
@@ -214,17 +214,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/images\/icons\/arrow_down_dark.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_dark.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_dark.png",
-      "initialSize" : 1309,
-      "fileType" : 8192
-    },
     "\/resources\/sass\/_print.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -248,6 +237,17 @@
       "outputAbbreviatedPath" : "\/public\/css\/_header.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/public\/images\/icons\/arrow_down_dark.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_dark.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_dark.png",
+      "initialSize" : 1309,
+      "fileType" : 8192
     },
     "\/public\/images\/backgrounds\/info_jaggy.png" : {
       "ignoreWasSetByUser" : 0,
@@ -361,18 +361,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/resources\/sass\/mq\/large\/_structure.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/resources\/sass\/mq\/large\/_structure.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_structure.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/resources\/sass\/mq\/tablet\/_retina.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -382,6 +370,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/public\/css\/_retina.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/resources\/sass\/mq\/large\/_structure.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/resources\/sass\/mq\/large\/_structure.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_structure.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
