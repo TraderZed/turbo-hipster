@@ -123,7 +123,7 @@
 	-----------------------------------
 	
 	- Headers
-
+	- Links
 	
 -------------------------------------------------------------------------*/
 /* HEADERS --------------------------------------------------------------*/
@@ -139,6 +139,12 @@ h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase; }
+
+/* LINKS --------------------------------------------------------------*/
+/* line 30, ../../resources/sass/core/_typography.scss */
+a {
+  text-decoration: none;
+  color: #ff007e; }
 
 /* STRUCTURE ------------------------------------------------------------*/
 /*-------------------------------------------------------------------------
@@ -212,20 +218,22 @@ html, body {
   background: #323136 url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
   background-size: 20px;
   padding: 20px 5%;
+  text-align: center;
   color: #fff; }
-  /* line 76, ../../resources/sass/_structure.scss */
+  /* line 77, ../../resources/sass/_structure.scss */
   #info h2, #info h3 {
     font-size: 16px; }
-    /* line 79, ../../resources/sass/_structure.scss */
+    /* line 80, ../../resources/sass/_structure.scss */
     #info h2 span, #info h3 span {
       font-style: italic; }
-  /* line 84, ../../resources/sass/_structure.scss */
+  /* line 85, ../../resources/sass/_structure.scss */
   #info p {
-    margin: 0 0 40px 0; }
-  /* line 88, ../../resources/sass/_structure.scss */
+    margin: 0 auto 40px auto; }
+  /* line 89, ../../resources/sass/_structure.scss */
   #info ul {
-    padding: 0 0 0 20px; }
-  /* line 92, ../../resources/sass/_structure.scss */
+    padding: 0 0 0 20px;
+    list-style: none; }
+  /* line 94, ../../resources/sass/_structure.scss */
   #info section {
     margin: 0 0 40px 0;
     padding: 0 0 0 0; }
@@ -290,10 +298,29 @@ html, body {
     position: relative;
     background: none;
     padding-top: 40px;
+    min-height: 100%;
     color: #323136; }
-    /* line 50, ../../resources/sass/mq/tablet/_structure.scss */
+    /* line 51, ../../resources/sass/mq/tablet/_structure.scss */
+    #info h2, #info h3 {
+      width: 50%;
+      margin: 0 auto 20px auto;
+      font-size: 20px;
+      line-height: 30px; }
+    /* line 58, ../../resources/sass/mq/tablet/_structure.scss */
     #info p {
-      width: 50%; } }
+      width: 50%; }
+    /* line 62, ../../resources/sass/mq/tablet/_structure.scss */
+    #info ul {
+      width: 50%;
+      margin: 0 auto;
+      overflow: hidden; }
+      /* line 67, ../../resources/sass/mq/tablet/_structure.scss */
+      #info ul li {
+        float: left;
+        width: 50%; }
+    /* line 74, ../../resources/sass/mq/tablet/_structure.scss */
+    #info section {
+      margin-bottom: 75px; } }
 /* DESKTOP -------------------------------------------------------------*/
 @media screen and (min-width: 1030px) {
   /*-------------------------------------------------------------------------

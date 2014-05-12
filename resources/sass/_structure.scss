@@ -26,12 +26,12 @@ html, body {
 
 ::selection {
 	background: #00ffff; /* Safari */
-	color: #ff007e;
+	color: $hotPink;
 }
 
 ::-moz-selection {
 	background: #00ffff; /* Firefox */
-	color: #ff007e;
+	color: $hotPink;
 }
 
 /* INTRO ------------------------------------------------------------*/
@@ -71,6 +71,7 @@ html, body {
 	background: $darkGrey url(../images/backgrounds/info_jaggy.png) 0 0 repeat-x;
 	background-size: 20px;
 	padding: 20px 5%;
+	text-align: center;
 	color: #fff;
 	
 	h2, h3 {
@@ -82,11 +83,12 @@ html, body {
 	}
 	
 	p {
-		margin: 0 0 40px 0;
+		margin: 0 auto 40px auto;
 	}
 
 	ul {
 		padding: 0 0 0 20px;
+		list-style: none;
 	}
 	
 	section {

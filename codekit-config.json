@@ -50,6 +50,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/public\/js\/build-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/js\/build-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/public\/js\/build-ck-ck.js",
+      "fileType" : 64
+    },
     "\/public\/css\/style.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -59,17 +70,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/resources\/sass\/ie.scss" : {
+    "\/public\/images\/icons\/arrow_down_white.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/resources\/sass\/ie.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/ie.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_white.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_white.png",
+      "initialSize" : 1307,
+      "fileType" : 8192
     },
     "\/resources\/sass\/print.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -80,6 +90,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/public\/css\/print.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/resources\/sass\/ie.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/resources\/sass\/ie.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/ie.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -94,6 +116,17 @@
       "outputAbbreviatedPath" : "\/public\/css\/_structure.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/public\/js\/lib\/jquery-2.1.1.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/js\/lib\/jquery-2.1.1.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/public\/js\/lib\/jquery-2.1.1.min-ck.js",
+      "fileType" : 64
     },
     "\/resources\/sass\/core\/_typography.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -119,6 +152,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/public\/css\/ie.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -128,14 +170,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
-    "\/public\/css\/ie.css" : {
+    "\/resources\/js\/build.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/resources\/js\/build.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/public\/js\/build-ck.js",
+      "fileType" : 64
     },
     "\/resources\/sass\/_mq.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -170,6 +214,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/public\/images\/icons\/arrow_down_dark.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_dark.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/icons\/arrow_down_dark.png",
+      "initialSize" : 1309,
+      "fileType" : 8192
+    },
     "\/resources\/sass\/_print.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -194,17 +249,27 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/resources\/sass\/core\/_colors.scss" : {
+    "\/public\/images\/backgrounds\/info_jaggy.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/resources\/sass\/core\/_colors.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_colors.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/public\/images\/backgrounds\/info_jaggy.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/backgrounds\/info_jaggy.png",
+      "initialSize" : 1099,
+      "fileType" : 8192
+    },
+    "\/public\/images\/backgrounds\/zack.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/backgrounds\/zack.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/backgrounds\/zack.jpg",
+      "initialSize" : 95073,
+      "fileType" : 4096
     },
     "\/resources\/sass\/mq\/desktop\/_header.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -227,6 +292,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/public\/css\/_footer.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/resources\/sass\/core\/_colors.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/resources\/sass\/core\/_colors.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_colors.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -272,18 +349,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/resources\/sass\/mq\/tablet\/_retina.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/resources\/sass\/mq\/tablet\/_retina.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_retina.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/resources\/sass\/style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -305,6 +370,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/public\/css\/_structure.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/resources\/sass\/mq\/tablet\/_retina.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/resources\/sass\/mq\/tablet\/_retina.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_retina.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -343,6 +420,17 @@
       "outputAbbreviatedPath" : "\/public\/css\/_retina.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/public\/images\/backgrounds\/zack-mobile.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/backgrounds\/zack-mobile.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/backgrounds\/zack-mobile.jpg",
+      "initialSize" : 24882,
+      "fileType" : 4096
     },
     "\/resources\/sass\/_retina.scss" : {
       "ignoreWasSetByUser" : 0,

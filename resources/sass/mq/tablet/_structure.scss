@@ -45,9 +45,33 @@
 	position: relative;
 	background: none;
 	padding-top: 40px;
+	min-height: 100%;
 	color: $darkGrey;
+	
+	h2, h3 {
+		width: 50%;
+		margin: 0 auto 20px auto;
+		font-size: 20px;
+		line-height: 30px;
+	}
 	
 	p {
 		width: 50%;
+	}
+
+	ul {
+		width: 50%;
+		margin: 0 auto;
+		overflow: hidden;
+		
+		li {
+			float: left;
+			width: 50%;
+		}
+		
+	}
+	
+	section {
+		margin-bottom: 75px;
 	}
 }
