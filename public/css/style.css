@@ -313,11 +313,11 @@ html, body {
     #info ul {
       width: 50%;
       margin: 0 auto;
+      padding: 0;
       overflow: hidden; }
-      /* line 67, ../../resources/sass/mq/tablet/_structure.scss */
+      /* line 68, ../../resources/sass/mq/tablet/_structure.scss */
       #info ul li {
-        float: left;
-        width: 50%; }
+        margin-bottom: 5px; }
     /* line 74, ../../resources/sass/mq/tablet/_structure.scss */
     #info section {
       margin-bottom: 75px; } }
