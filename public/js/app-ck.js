@@ -1,0 +1,1 @@
+(function(){var e=angular.module("turboHipster",[]);e.controller("GalleryController",["$scope","$http",function(e,t){console.log(e);console.log(t);t.get("/resources/js/json/videos.json").success(function(t){e.videos=t})}])})();

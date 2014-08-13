@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="turboHipster">
 	<head>
 		<meta charset="utf-8">
 
@@ -90,13 +90,22 @@
 				<p><a href="mailto:zack@zackginies.com" title="Email me!">Email me</a> or let's connect on <a href="http://www.linkedin.com/pub/zack-ginies/6/bb4/326" target="_blank" title="LinkedIn">LinkedIn</a>.</p>
 				
 			</section><!-- End INFO -->
+
+			<h3>Still want more?</h3>		
+			
+			<section id="video-gallery" ng-controller="GalleryController as gallery">
+				{{gallery.product.name}}
+			</section><!-- End VIDEO GALLERY -->
+			
 		</div><!-- End MAIN CONTENT -->
 
 		<footer>
 		</footer>
 		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.18/angular.min.js"></script>
 		<script src="/public/js/lib/jquery-2.1.1.min.js"></script>
 		<script src="/public/js/build-ck.js"></script>
+		<script src="/public/js/app-ck.js"></script>
 		
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
