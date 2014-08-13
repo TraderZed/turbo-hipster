@@ -2,14 +2,14 @@
 
 var app = angular.module('turboHipster', []);
 
-app.controller('GalleryController', ['$scope', '$http', function($scope, $http) {
+app.controller('GalleryController', ['$http', function($http) {
+	
+	var gallery 	= this;
+	gallery.videos 	= [];
 
-	console.log($scope);
-	console.log($http);
-
-	$http.get('/resources/js/json/videos.json').
+	$http.get('/resources/json/videos.json').
 		success(function(data){
-			$scope.videos = data;
+			gallery.videos = data;
 		})	
 
 }]);

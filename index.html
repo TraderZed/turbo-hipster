@@ -93,8 +93,13 @@
 
 			<h3>Still want more?</h3>		
 			
-			<section id="video-gallery" ng-controller="GalleryController as gallery">
-				{{gallery.product.name}}
+			<section id="video-gallery" ng-controller="GalleryController as gallery">			
+				<div ng-repeat="video in gallery.videos">
+					<p>{{video.title}}</p>
+					<video>
+					
+					</video>
+				</div>
 			</section><!-- End VIDEO GALLERY -->
 			
 		</div><!-- End MAIN CONTENT -->
