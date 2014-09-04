@@ -1,1 +1,1 @@
-(function(){var e=angular.module("turboHipster",[]);e.controller("GalleryController",["$http",function(e){var t=this;t.videos=[];e.get("/resources/json/videos.json").success(function(e){t.videos=e})}])})();
+(function(){var e=angular.module("turboHipster",[]);e.controller("GalleryController",["$http","$scope",function(e,t){var n=this;n.videos=[];e.get("/resources/json/videos.json").success(function(e){n.videos=e;t.generateURL=function(e){return"/public/videos/"+e+".mp4"}})}])})();

@@ -331,14 +331,43 @@ html, body {
   	-----------------------------------
   	
   	- Intro
+  	- Gallery
   
   	
   -------------------------------------------------------------------------*/
   /* INTRO ------------------------------------------------------------*/
-  /* line 17, ../../resources/sass/mq/desktop/_structure.scss */
+  /* line 18, ../../resources/sass/mq/desktop/_structure.scss */
   #intro h1 {
     font-size: 170px;
-    letter-spacing: 6px; } }
+    letter-spacing: 6px; }
+
+  /* GALLERY -----------------------------------------------------------*/
+  /* line 27, ../../resources/sass/mq/desktop/_structure.scss */
+  #video-gallery {
+    position: relative; }
+    /* line 30, ../../resources/sass/mq/desktop/_structure.scss */
+    #video-gallery div {
+      position: relative;
+      width: 100%;
+      height: 450px; }
+      /* line 35, ../../resources/sass/mq/desktop/_structure.scss */
+      #video-gallery div h4 {
+        position: absolute;
+        top: 50%;
+        margin: -40px 0 0 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 33px;
+        text-align: center;
+        color: #fff; }
+        /* line 45, ../../resources/sass/mq/desktop/_structure.scss */
+        #video-gallery div h4 span {
+          display: block;
+          font-size: 50px; }
+      /* line 51, ../../resources/sass/mq/desktop/_structure.scss */
+      #video-gallery div video {
+        width: 100%;
+        height: auto; } }
 /* EXTRA LARGE SCREEN --------------------------------------------------*/
 /* PRINT ---------------------------------------------------------------*/
 @media print {

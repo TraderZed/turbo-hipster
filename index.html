@@ -95,9 +95,8 @@
 			
 			<section id="video-gallery" ng-controller="GalleryController as gallery">			
 				<div ng-repeat="video in gallery.videos">
-					<p>{{video.title}}</p>
-					<h2>I really like <span>{{video.title}}</span></h2>
-					<video src="" class="video video-{{video.slug}}" width="948" height="711" autoplay loop class="fill" muted="muted"></video>
+					<h4>I really like <span>{{video.title}}</span></h4>
+					<video ng-src="{{generateURL(video.slug)}}" class="video video-{{video.slug}}" width="948" height="711" autoplay loop class="fill" muted="muted"></video>
 				</div>
 			</section><!-- End VIDEO GALLERY -->
 			
